@@ -486,7 +486,7 @@ Going over to "Packages", this is going to contain information related to your o
 <img src="https://snipboard.io/xc0Nq4.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="https://snipboard.io/vJ7pKs.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/TMot9O.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -494,7 +494,7 @@ Going over to "Packages", this is going to contain information related to your o
 What we can do is click on it and we can kill the process, view the modules, suspend it, resume, download the memory strings, and view the memory map.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/vJ7pKs.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -502,7 +502,7 @@ What we can do is click on it and we can kill the process, view the modules, sus
 What I like about this is that you can also see the command line. Imagine this, someone calls you up and says, "Hey man, my computer is running pretty slow and my mouse is moving by itself now." You might be like, "Okay, we might have something interesting here". So you load up LimaCharlie.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/TfBu4h.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -510,7 +510,10 @@ What I like about this is that you can also see the command line. Imagine this, 
 Head over to "Processes", and what do you see? You see Excel spawning a Powershell script, running with encoded commands. So that is likely something strange. Then you can pivot over to "Network", to see if there's any network connections that were initiated by that Powershell encoded process.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/TfBu4h.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/eKucXL.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -518,7 +521,10 @@ Head over to "Processes", and what do you see? You see Excel spawning a Powershe
 What you can also do is, pivot over to "Autoruns". "Was there any persistence created by that Powershell? Yes or no", and then you can also check your "Services" as well. Was there any service that was recently installed? Is there any executable that is running in the "temp directory", "public users directory", or even "recycle bin". There's just a lot of information that you can use to pivot within LimaCharlie.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/OopXK6.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/LVC5Tg.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -526,7 +532,7 @@ What you can also do is, pivot over to "Autoruns". "Was there any persistence cr
 There's also a timeline, which is incredibly important in analysis. So let's just say the user calls you up at '8:40:03', and says, "Hey something strange is on my computer." Well, take a look at the timeline and you can see surrounding events very quickly.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/uDtn02.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -534,7 +540,7 @@ There's also a timeline, which is incredibly important in analysis. So let's jus
 You don't even need to run any queries. You can just go over to the timeline and start looking within the timeframe of when the situation occurred. Hopefully, you can find something interesting. If you do find something interesting, just click on it and you get all of your details on the right.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/HZzgTl.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -542,11 +548,15 @@ You don't even need to run any queries. You can just go over to the timeline and
 Lastly, we have our "Users". So we see the users that exist on our server. Now going back over to that Powershell example, maybe Powershell created a new user afterward, who knows? But you can see the user here, and you can also see when they logged on as well.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/A5WNM2.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/Ql5gSG.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
 We now have a machine with LimaCharlie installed and confirmed it is generating events. In part three, we will start to generate events for the password recovery tool, and begin creating our detection and response rule.
-
+<br />
+<br />
 That is it for this part and I hope that this has been helpful for you so far. If you have stumbled across any errors along the way do plan on researching it. Remember to stay curious and do things differently.
